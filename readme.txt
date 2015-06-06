@@ -14,6 +14,8 @@ Set predefined CSS classes to menu items
 Simple plugin that adds extra functionality to Menu Items. The plugin will allow to set predefined CSS classes to menu items.
 Support for the plugin "If Menu": http://wordpress.org/plugins/if-menu/ - does not break the "If Menu" plugin.
 
+Custom Menu Class is 100% free. if you have questions or need additional information u can comment on my Website or in the "Support" Tab here - [deving.de](http://deving.de “deving.de”).
+
 == Installation ==
 
 To install the plugin, follow the steps below
