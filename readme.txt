@@ -1,6 +1,6 @@
 === Custom Menu Class ===
 Contributors: Theodoros Fabisch
-Tags: menu, classes, css class, css classes
+Tags: menu, classes, menu class, css class, css classes, predefined css class
 Requires at least: 3.7
 Tested up to: 4.2.2
 Stable tag: trunk
@@ -30,27 +30,33 @@ Example of adding new CSS classes for menu items.
 
 `
 //theme's functions.php
-add_filter('custom_menu_css_classes', 'custom_menu_classes_basic_classes');
+add_filter('custom_menu_css_classes', 'custom_menu_classes_extra');
 
-function custom_menu_classes_basic_classes($classes)
+function custom_menu_classes_extra($classes)
 {
 	$classes[] = array(
-		'name' => 'Footer: CSS Class 1',
+		'name' => __('Footer CSS Class 1', 'custom-menu-class'),
 		'class' => 'footer-class-1'
 	);
-
+	
 	$classes[] = array(
-		'name' => 'Footer: CSS Class 2',
+		'name' => __('Footer CSS Class 2', 'custom-menu-class'),
 		'class' => 'footer-class-2'
 	);
-
-	//...
 
 	return $classes;
 }
 `
 
+== Screenshots ==
+
+1. Here's a screenshot of it in action
+
 == Changelog ==
 
 = 0.1 =
 * Plugin release. Basis for this plugin is "If Menu": http://wordpress.org/plugins/if-menu/
+
+= 0.1.2 =
+* Added Screenshot
+* Bugfix: Filter function name
