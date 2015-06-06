@@ -98,7 +98,7 @@ class Custom_Menu_Class
 				<?php _e('CSS-Classes (predefined)<br /><small>Hold down the control (ctrl) button to select multiple options</small>', 'custom-menu-class') ?><br />
 				<select id="edit-menu-item-custom-menu-class-<?php echo $item -> ID; ?>" name="menu-item-custom-menu-class[<?php echo $item -> ID; ?>][]" multiple="multiple">
 					<?php foreach($classes as $class): ?>
-						<option value="<?php echo $class['class']; ?>" <?php selected(true, in_array($class['class'], $Custom_Menu_Class_class), true); ?>><?php echo $class['name']; ?></option>
+						<option value="<?php echo $class['class']; ?>" <?php if (is_array($Custom_Menu_Class_class)) { selected(true, in_array($class['class'], $Custom_Menu_Class_class), true); } ?>><?php echo $class['name']; ?></option>
 					<?php endforeach ?>
 				</select>
 			</label>
