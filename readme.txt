@@ -25,6 +25,27 @@ To install the plugin, follow the steps below
 1. Upload `custom-menu-class` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Set predefined CSS classes for your Menu Items in Appearance -> Menus page - Choose CSS classes from the select field (multiple selection is possible)
+4. Example of adding new CSS classes for menu items:
+
+`
+//theme's functions.php
+add_filter('custom_menu_css_classes', 'custom_menu_classes_extra');
+
+function custom_menu_classes_extra($classes)
+{
+	$classes[] = array(
+		'name' => __('Footer CSS Class 1', 'custom-menu-class'),
+		'class' => 'footer-class-1'
+	);
+	
+	$classes[] = array(
+		'name' => __('Footer CSS Class 2', 'custom-menu-class'),
+		'class' => 'footer-class-2'
+	);
+
+	return $classes;
+}
+`
 
 == Frequently Asked Questions ==
 
