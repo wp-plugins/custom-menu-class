@@ -95,7 +95,7 @@ class Custom_Menu_Class
 		?>
 		<p class="custom-menu-class-condition description description-wide" style="display: <?php echo $Custom_Menu_Class_enable ? 'block' : 'block' ?>">
 			<label for="edit-menu-item-custom-menu-class-<?php echo $item -> ID; ?>">
-				<?php __('CSS-Classes (predefined)<br /><small>Hold down the control (ctrl) button to select multiple options</small>', 'custom-menu-class') ?><br />
+				<?php _e('CSS-Classes (predefined)<br /><small>Hold down the control (ctrl) button to select multiple options</small>', 'custom-menu-class') ?><br />
 				<select id="edit-menu-item-custom-menu-class-<?php echo $item -> ID; ?>" name="menu-item-custom-menu-class[<?php echo $item -> ID; ?>][]" multiple="multiple">
 					<?php foreach($classes as $class): ?>
 						<option value="<?php echo $class['class']; ?>" <?php if (is_array($Custom_Menu_Class_class)) { selected(true, in_array($class['class'], $Custom_Menu_Class_class), true); } ?>><?php echo $class['name']; ?></option>
@@ -168,19 +168,19 @@ include 'classes.php';
 function register_cpt_cmcplugin()
 {
 	$labels = array(
-		'name' => __('Menu CSS Klassen', 'custom-menu-class'),
-		'singular_name' => __('Menu CSS Klassen', 'custom-menu-class'),
-		'add_new' => __('Erstellen', 'custom-menu-class'),
-		'add_new_item' => __('Neue CSS Klasse erstellen', 'custom-menu-class'),
-		'edit_item' => __('CSS Klasse bearbeiten', 'custom-menu-class'),
-		'new_item' => __('Neue CSS Klasse', 'custom-menu-class'),
-		'view_item' => __('CSS Klassen', 'custom-menu-class'),
-		'all_items' => __('CSS Klassen', 'custom-menu-class'),
-		'search_items' => __('Suche CSS Klasse', 'custom-menu-class'),
-		'not_found' => __('Keine CSS Klasse gefunden', 'custom-menu-class'),
-		'not_found_in_trash' => __('Keine CSS Klasse im Papierkorb gefunden', 'custom-menu-class'),
-		'parent_item_colon' => __('Eltern CSS Klasse:', 'custom-menu-class'),
-		'menu_name' => __('CSS Klassen', 'custom-menu-class')
+		'name' => _e('Menu CSS Klassen', 'custom-menu-class'),
+		'singular_name' => _e('Menu CSS Klassen', 'custom-menu-class'),
+		'add_new' => _e('Erstellen', 'custom-menu-class'),
+		'add_new_item' => _e('Neue CSS Klasse erstellen', 'custom-menu-class'),
+		'edit_item' => _e('CSS Klasse bearbeiten', 'custom-menu-class'),
+		'new_item' => _e('Neue CSS Klasse', 'custom-menu-class'),
+		'view_item' => _e('CSS Klassen', 'custom-menu-class'),
+		'all_items' => _e('CSS Klassen', 'custom-menu-class'),
+		'search_items' => _e('Suche CSS Klasse', 'custom-menu-class'),
+		'not_found' => _e('Keine CSS Klasse gefunden', 'custom-menu-class'),
+		'not_found_in_trash' => _e('Keine CSS Klasse im Papierkorb gefunden', 'custom-menu-class'),
+		'parent_item_colon' => _e('Eltern CSS Klasse:', 'custom-menu-class'),
+		'menu_name' => _e('CSS Klassen', 'custom-menu-class')
 	);
 
 	$args = array(
@@ -216,7 +216,7 @@ function cmc_classes_columns($columns)
 {
 	$columns = array(
 		'cb' => '<input type="checkbox" />',
-		'title' => __('CSS Class')
+		'title' => _e('CSS Class')
 	);
 
 	return $columns;
