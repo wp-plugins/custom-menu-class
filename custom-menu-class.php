@@ -168,19 +168,19 @@ include 'classes.php';
 function register_cpt_cmcplugin()
 {
 	$labels = array(
-		'name' => _e('Menu CSS Klassen', 'custom-menu-class'),
-		'singular_name' => _e('Menu CSS Klassen', 'custom-menu-class'),
-		'add_new' => _e('Erstellen', 'custom-menu-class'),
-		'add_new_item' => _e('Neue CSS Klasse erstellen', 'custom-menu-class'),
-		'edit_item' => _e('CSS Klasse bearbeiten', 'custom-menu-class'),
-		'new_item' => _e('Neue CSS Klasse', 'custom-menu-class'),
-		'view_item' => _e('CSS Klassen', 'custom-menu-class'),
-		'all_items' => _e('CSS Klassen', 'custom-menu-class'),
-		'search_items' => _e('Suche CSS Klasse', 'custom-menu-class'),
-		'not_found' => _e('Keine CSS Klasse gefunden', 'custom-menu-class'),
-		'not_found_in_trash' => _e('Keine CSS Klasse im Papierkorb gefunden', 'custom-menu-class'),
-		'parent_item_colon' => _e('Eltern CSS Klasse:', 'custom-menu-class'),
-		'menu_name' => _e('CSS Klassen', 'custom-menu-class')
+		'name' => __('Menu CSS Klassen', 'custom-menu-class'),
+		'singular_name' => __('Menu CSS Klassen', 'custom-menu-class'),
+		'add_new' => __('Erstellen', 'custom-menu-class'),
+		'add_new_item' => __('Neue CSS Klasse erstellen', 'custom-menu-class'),
+		'edit_item' => __('CSS Klasse bearbeiten', 'custom-menu-class'),
+		'new_item' => __('Neue CSS Klasse', 'custom-menu-class'),
+		'view_item' => __('CSS Klassen', 'custom-menu-class'),
+		'all_items' => __('CSS Klassen', 'custom-menu-class'),
+		'search_items' => __('Suche CSS Klasse', 'custom-menu-class'),
+		'not_found' => __('Keine CSS Klasse gefunden', 'custom-menu-class'),
+		'not_found_in_trash' => __('Keine CSS Klasse im Papierkorb gefunden', 'custom-menu-class'),
+		'parent_item_colon' => __('Eltern CSS Klasse:', 'custom-menu-class'),
+		'menu_name' => __('CSS Klassen', 'custom-menu-class')
 	);
 
 	$args = array(
