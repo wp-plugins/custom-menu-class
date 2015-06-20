@@ -46,5 +46,5 @@ Set the CSS classes in the Custom Menu Class settings page
 * Added screenshot
 * Bugfix: Filter function name
 
-= 0.2.0
+= 0.2.0 =
 * Added plugin settings page for CSS classes
