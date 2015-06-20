@@ -3,7 +3,7 @@
 Plugin Name: Custom Menu Class
 Plugin URI: http://wordpress.org/plugins/custom-menu-class/
 Description: Select predefined CSS classes to menu items
-Version: 0.2.1
+Version: 0.2.0
 Author: Theodoros Fabisch
 Author URI: http://deving.de
 License: GPL2
@@ -168,31 +168,31 @@ include 'classes.php';
 function register_cpt_cmcplugin()
 {
 	$labels = array(
-		'name' => __('Menu CSS Klassen', 'custom-menu-class'),
-		'singular_name' => __('Menu CSS Klassen', 'custom-menu-class'),
-		'add_new' => __('Erstellen', 'custom-menu-class'),
-		'add_new_item' => __('Neue CSS Klasse erstellen', 'custom-menu-class'),
-		'edit_item' => __('CSS Klasse bearbeiten', 'custom-menu-class'),
-		'new_item' => __('Neue CSS Klasse', 'custom-menu-class'),
-		'view_item' => __('CSS Klassen', 'custom-menu-class'),
-		'all_items' => __('CSS Klassen', 'custom-menu-class'),
-		'search_items' => __('Suche CSS Klasse', 'custom-menu-class'),
-		'not_found' => __('Keine CSS Klasse gefunden', 'custom-menu-class'),
-		'not_found_in_trash' => __('Keine CSS Klasse im Papierkorb gefunden', 'custom-menu-class'),
-		'parent_item_colon' => __('Eltern CSS Klasse:', 'custom-menu-class'),
-		'menu_name' => __('CSS Klassen', 'custom-menu-class')
+		'name' => __('Menu CSS Classes', 'custom-menu-class'),
+		'singular_name' => __('Menu CSS Classes', 'custom-menu-class'),
+		'add_new' => __('Add', 'custom-menu-class'),
+		'add_new_item' => __('Add new CSS Class', 'custom-menu-class'),
+		'edit_item' => __('Edit CSS Class', 'custom-menu-class'),
+		'new_item' => __('New CSS Class', 'custom-menu-class'),
+		'view_item' => __('CSS Classes', 'custom-menu-class'),
+		'all_items' => __('CSS Classes', 'custom-menu-class'),
+		'search_items' => __('Search CSS Class', 'custom-menu-class'),
+		'not_found' => __('No CSS Class found', 'custom-menu-class'),
+		'not_found_in_trash' => __('No CSS Class found', 'custom-menu-class'),
+		'parent_item_colon' => __('Parent CSS Class:', 'custom-menu-class'),
+		'menu_name' => __('Menu CSS Classes', 'custom-menu-class')
 	);
 
 	$args = array(
 		'labels' => $labels,
 		'hierarchical' => false,
-		'description' => 'Menu CSS Klassen Verwaltung',
+		'description' => 'Menu CSS Classes',
 		'supports' => array(
 			'title'
 		) ,
 		'public' => false,
 		'show_ui' => true,
-		'show_in_menu' => 'cmcplugin-settings-page',
+		'show_in_menu' => 'options-general.php',//cmcplugin-settings-page
 		'menu_position' => 100,
 		'menu_icon' =>'dashicons-portfolio',
 		'show_in_nav_menus' => false,
@@ -248,7 +248,7 @@ function cmcplugin_menu()
 	add_submenu_page('edit.php?post_type=cmc_classes', 'Settings', 'Settings', 8, 'cmcplugin-settings', 'cmc_classes');
 }
 
-add_action('admin_menu', 'cmcplugin_menu');
+//add_action('admin_menu', 'cmcplugin_menu');
 
 /* ------------------------------------------------
 	Run the plugin
