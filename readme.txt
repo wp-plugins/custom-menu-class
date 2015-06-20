@@ -48,3 +48,6 @@ Set the CSS classes in the Custom Menu Class settings page
 
 = 0.2.0 =
 * Added plugin settings page for CSS classes
+
+= 0.2.1 =
+* Select field for CSS classes fullwidth
