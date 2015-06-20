@@ -3,7 +3,7 @@
 Plugin Name: Custom Menu Class
 Plugin URI: http://wordpress.org/plugins/custom-menu-class/
 Description: Select predefined CSS classes to menu items
-Version: 0.2.0
+Version: 0.2.1
 Author: Theodoros Fabisch
 Author URI: http://deving.de
 License: GPL2
