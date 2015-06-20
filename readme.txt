@@ -24,14 +24,14 @@ To install the plugin, follow the steps below
 
 1. Upload `custom-menu-class` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Define CSS classes for menu items in the 'Custom Menu Class' settings page
-4. Set predefined CSS classes for your menu items in 'Appearance -> Menus page' - Choose CSS classes from the select field (multiple selection is possible)
+3. Define CSS classes for menu items in the 'Options -> Menu CSS Classes' settings page
+4. Set predefined CSS classes for your menu items in 'Appearance -> Menus' page - Choose CSS classes from the select field (multiple selection is possible)
 
 == Frequently Asked Questions ==
 
 = How can I set the CSS classes? =
 
-Set the CSS classes in the Custom Menu Class settings page
+Set the CSS classes in the Custom Menu Class settings page under 'Options -> Menu CSS Classes'
 
 == Screenshots ==
 
@@ -47,7 +47,7 @@ Set the CSS classes in the Custom Menu Class settings page
 * Bugfix: Filter function name
 
 = 0.2.0 =
-* Added plugin settings page for CSS classes
+* Added plugin settings page for CSS classes (Options -> Menu CSS Classes)
 
 = 0.2.1 =
 * Select field for CSS classes fullwidth
