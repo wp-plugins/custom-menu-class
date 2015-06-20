@@ -3,7 +3,7 @@
 Plugin Name: Custom Menu Class
 Plugin URI: http://wordpress.org/plugins/custom-menu-class/
 Description: Select predefined CSS classes to menu items
-Version: 0.2.0
+Version: 0.2.1
 Author: Theodoros Fabisch
 Author URI: http://deving.de
 License: GPL2
@@ -96,7 +96,7 @@ class Custom_Menu_Class
 		<p class="custom-menu-class-condition description description-wide" style="display: <?php echo $Custom_Menu_Class_enable ? 'block' : 'block' ?>">
 			<label for="edit-menu-item-custom-menu-class-<?php echo $item -> ID; ?>">
 				<?php _e('CSS-Classes (predefined)<br /><small>Hold down the control (ctrl) button to select multiple options</small>', 'custom-menu-class') ?><br />
-				<select id="edit-menu-item-custom-menu-class-<?php echo $item -> ID; ?>" name="menu-item-custom-menu-class[<?php echo $item -> ID; ?>][]" multiple="multiple">
+				<select id="edit-menu-item-custom-menu-class-<?php echo $item -> ID; ?>" class="widefat" name="menu-item-custom-menu-class[<?php echo $item -> ID; ?>][]" multiple="multiple">
 					<?php foreach($classes as $class): ?>
 						<option value="<?php echo $class['class']; ?>" <?php if (is_array($Custom_Menu_Class_class)) { selected(true, in_array($class['class'], $Custom_Menu_Class_class), true); } ?>><?php echo $class['name']; ?></option>
 					<?php endforeach ?>
