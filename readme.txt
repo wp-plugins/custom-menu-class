@@ -50,4 +50,4 @@ Set the CSS classes in the Custom Menu Class settings page under 'Options -> Men
 * Added plugin settings page for CSS classes (Options -> Menu CSS Classes)
 
 = 0.2.1 =
-* Select field for CSS classes fullwidth
+* Fullwidth select field for menu CSS classes
