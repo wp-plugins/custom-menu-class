@@ -18,7 +18,7 @@ Example of defining CSS classes for menu items is in the "FAQ" tab here.
 
 Custom Menu Class is 100% free. if you have questions or need additional information u can comment on my website ( http://deving.de - http://deving.de/blog/wordpress/2292-wordpress-plugin-fuer-voreingestellte-css-klassen-fuer-menue-links/ ) or in the "Support" tab here.
 
-Check out my [Themeforest Account]([WordPress](http://wordpress.org/ "Your favorite software") "Themeforest")
+Check out my [Themeforest Account](http://themeforest.net/user/Aiken1/portfolio?ref=Aiken1 "Themeforest")
 
 == Installation ==
 
