@@ -57,3 +57,6 @@ Set the CSS classes in the Custom Menu Class settings page under 'Options -> Men
 = 0.2.2 =
 * Bugfix: Added wp_reset_query
 * Bugfix: Changed _e() to __()
+
+= 0.2.3 =
+* Notice: removed deprecated argument caller_get_posts and added ignore_sticky_posts
