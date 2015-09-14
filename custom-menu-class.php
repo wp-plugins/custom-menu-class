@@ -3,7 +3,7 @@
 Plugin Name: Custom Menu Class
 Plugin URI: http://wordpress.org/plugins/custom-menu-class/
 Description: Select predefined CSS classes to menu items
-Version: 0.2.1
+Version: 0.2.2
 Author: Theodoros Fabisch
 Author URI: http://deving.de
 License: GPL2
@@ -216,7 +216,7 @@ function cmc_classes_columns($columns)
 {
 	$columns = array(
 		'cb' => '<input type="checkbox" />',
-		'title' => _e('CSS Class')
+		'title' => __('CSS Class')
 	);
 
 	return $columns;
@@ -233,7 +233,7 @@ function change_default_title($title)
  
      if  ($screen->post_type == 'cmc_classes')
      {
-          return 'Enter CSS Class here';
+          return __('Enter CSS Class here');
      }
 }
  

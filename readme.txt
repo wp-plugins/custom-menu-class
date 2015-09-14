@@ -2,7 +2,7 @@
 Contributors: Theodoros Fabisch
 Tags: menu, classes, menu class, css class, css classes, predefined css class
 Requires at least: 3.7
-Tested up to: 4.2.2
+Tested up to: 4.3
 Stable tag: trunk
 License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -53,3 +53,7 @@ Set the CSS classes in the Custom Menu Class settings page under 'Options -> Men
 
 = 0.2.1 =
 * Fullwidth select field for menu CSS classes
+
+= 0.2.2 =
+* Bugfix: Added wp_reset_query
+* Bugfix: Changed _e() to __()

@@ -10,7 +10,7 @@ function custom_menu_classes_basic_classes($classes)
 		'post_type' => 'cmc_classes',
 		'post_status' => 'publish',
 		'posts_per_page' => -1,
-		'caller_get_posts'=> 1
+		'ignore_sticky_posts'=> 1
 	);
 	
 	$cmc_classes = new WP_Query($cmc_args);
@@ -28,6 +28,8 @@ function custom_menu_classes_basic_classes($classes)
 			);
 		}
 	}
+
+	wp_reset_query();
 
 	return $classes;
 }
